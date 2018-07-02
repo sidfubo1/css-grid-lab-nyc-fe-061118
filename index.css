@@ -7,9 +7,38 @@ body {
 .grid-container {
   height: 100vh;
   width: 100vw;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 5px;
 }
 
 .grid-item {
   background-color: grey;
   border: 1px solid black;
 }
+
+.bigItem {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 50%;
+  width: 50%;
+  justify-self: center;
+  align-self: center;
+}
+
+/*Same can be written as 
+
+.bigItem {
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+OR
+
+.bigItem {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+*/
