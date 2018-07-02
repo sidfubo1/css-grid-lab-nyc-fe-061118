@@ -23,3 +23,16 @@ body {
   grid-row-start: 2;
   grid-row-end: 4;
 }
+
+/*Same can be written as 
+
+.bigItem {
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+OR
+
+
+
+*/
